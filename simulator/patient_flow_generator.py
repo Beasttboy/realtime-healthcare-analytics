@@ -5,9 +5,9 @@ import time
 from datetime import datetime, timedelta
 from confluent_kafka import Producer
 
-BOOTSTRAP_SERVERS = "bootstrap-server"
-EVENT_HUB_NAME = "event-hub-name"
-EVENT_HUB_CONNECTION_STRING = '<connection-string>'
+BOOTSTRAP_SERVERS = "hospital-analytics-mn.servicebus.windows.net:9093"
+EVENT_HUB_NAME = "hospital-analytis-eh"
+EVENT_HUB_CONNECTION_STRING = 'Endpoint=sb://hospital-analytics-mn.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=nsa8r4YziyjNp/v/DRkT3q6fg54k3DZXN+AEhLuMa+M='
 
 TOPIC_NAME = EVENT_HUB_NAME
 
